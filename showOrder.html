@@ -1,0 +1,115 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pinacolada</title>
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+        <link rel="stylesheet" href="style.css">
+        <style>
+            table, th, td {
+  border: 1px solid black;
+}
+        </style>
+    
+    </head>
+    <body onload="readOrder()">
+        <nav class="navbar target">
+            <a href="index.html" class="navbar-link">
+                <i class="fas fa-home"></i>
+                <span>Home</span>
+            </a>
+        
+       
+            <a href="order.html" class="navbar-link">
+                <i class="fas fa-hamburger"></i>
+                <span>Order</span>
+            </a>
+        
+            <a href="showOrder.html" class="navbar-link">
+                <i class="fas fa-clipboard"></i>
+                <span>Check</span>
+            </a>
+        
+            <a href="#" class="navbar-link" onclick="logout()">
+                <i class="fas fa-sign-out-alt"></i>
+                <span>Logout</span>
+            </a>
+       </nav>
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+<!--- Invoice-->
+        <div class="menu target"></div>
+    
+        <h2>Customer Invoice</h2>
+      
+        <table id="tbl"  style="border-collapse: collapse;background-color: aquamarine;">
+            <text id="uname"></text>
+        <tr>
+            <th>Item</th>
+            <th>Quantity</th>
+            <th>Price($50/Quantity)</th>
+        </tr>
+        <tr>
+            <td>pizza</td>
+            <td id="pizza" ></td>
+            <td id="pizzaCost"></td>
+        </tr> 
+        <tr>
+            <td>lasagna</td>
+            <td id="lasagna"></td>
+            <td id="lasagnaCost"></td>
+        </tr> 
+        <tr>
+            <td>wraps</td>
+            <td id="wraps"></td>
+            <td id="wrapsCost"></td>
+        </tr> 
+        <tr>
+            <td>alferado</td>
+            <td id="alferdo"></td>
+            <td id="alferdoCost"></td>
+        </tr> 
+        <tr>
+            <td>Spaghetti</td>
+            <td id="Spaghetti"></td>
+            <td id="SpaghettiCost"></td>
+        </tr> 
+        <tr>
+            <td>arabiata</td>
+            <td id="arabiata"></td>
+            <td id="arabiataCost"></td>
+        </tr> 
+        <tr>
+            <td>pancake</td>
+            <td id="pancake"></td>
+            <td id="pancakeCost"></td>
+        </tr> 
+        <tr>
+            <td>sandwich</td>
+            <td id="sandwich"></td>
+            <td id="sandwichCost"></td>
+        </tr> 
+        <tr>
+            <td>TOTAL</td>
+            <td ></td>
+            <td id="totalBill"></td>
+        </tr> 
+        
+        </table>
+        <button class="btn" onClick="logout()">OK</button>
+    </body>
+    <script src="orderAdd.js"></script>
+    <script src="script.js"></script>
+    <script src="orderAdd.js"></script>
+   
+</html>

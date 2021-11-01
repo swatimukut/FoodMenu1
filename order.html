@@ -1,0 +1,98 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pinacolada</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+     
+    </head>
+    <body>
+        <nav class="navbar target">
+            <a href="index.html" class="navbar-link">
+                <i class="fas fa-home"></i>
+                <span>Home</span>
+            </a>
+        
+       
+            <a href="order.html" class="navbar-link">
+                <i class="fas fa-hamburger"></i>
+                <span>Order</span>
+            </a>
+        
+            <a href="showOrder.html" class="navbar-link">
+                <i class="fas fa-clipboard"></i>
+                <span>Check</span>
+            </a>
+        
+            <a href="#" class="navbar-link" onclick="logout()">
+                <i class="fas fa-sign-out-alt"></i>
+                <span>Logout</span>
+            </a>
+       </nav>
+        <div class="menu target"></div>
+    
+<!-- Menu-->
+      <div class= "container">
+        <section class="section-3">
+            <h1 class="section-heading">More In The Menu!</h1>
+            <h3 id="uname" class="welcomeMsg" >Hello </h3>
+          
+            <div class="gallery">
+                <a href="#" class="gallery-link" title="Order Now" id="lasagna" onClick=addOrder(id)>
+                    <img src="lasagna.jpg" class="food-img">
+                    <h3 class="food-name">Lasagna</h3>
+                    <p class="food-description">Lasagna pasta
+                         with the goodness of farm fresh tomatoes,
+                          and a scrumptous blend of ricotta, 
+                          chedder and Parmesan.</p>
+                </a>
+
+                <a href="#" class="gallery-link" title="Order Now" id="alferdo" onClick=addOrder(id)>
+                    <img src="pastaAlferado.jpg" class="food-img">
+                    <h3 class="food-name">Fussilli-Alferado</h3>
+                    <p class="food-description">Lasagna pasta
+                         with the goodness of homemade bechamel sauce,
+                          and a scrumptous blend of ricotta, 
+                          chedder and Parmesan.</p>
+                </a>
+
+                <a href="#" class="gallery-link" title="Order Now" id="Spaghetti" onClick=addOrder(id)>
+                    <img src="pasta.jpg" class="food-img">
+                    <h3 class="food-name">Spaghetti</h3>
+                    <p class="food-description">Spaghatti pasta with
+                         mouth watery farm fresh tomato sauce.</p>
+                </a>
+
+                <a href="#" class="gallery-link" title="Order Now" id="arabiata" onClick=addOrder(id)>
+                    <img src="arabiata.jpg" class="food-img">
+                    <h3 class="food-name">Penne Arabiata</h3>
+                    <p class="food-description">Penne pasta
+                         with the goodness of farm fresh tomatoes,<br>
+                          and a scrumptous blend of ricotta, 
+                          chedder and Parmesan.</p>
+                </a>
+
+                <a href="#" class="gallery-link" title="Order Now" id="pancake" onClick=addOrder(id)>
+                    <img src="pancake.jpg" class="food-img">
+                    <h3 class="food-name">pancake</h3>
+                    <p class="food-description">This homamade
+                         preparation of pancake is a must try!</p>
+                </a>
+                   
+                <a href="#" class="gallery-link" title="Order Now" id="sandwich" onClick=addOrder(id)>
+                    <img src="Sandwich.jpg" class="food-img">
+                    <h3 class="food-name">Sandwich</h3>
+                    <p class="food-description">Sandwich with fish
+                         and chip. Breakfast the American way!</p>
+                </a>   
+            </div>
+
+        </section> 
+         </div>
+           <script src="script.js"></script>
+           <script src="orderAdd.js"></script>
+         
+    </body>
+</html>
